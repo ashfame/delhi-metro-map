@@ -1,0 +1,226 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Delhi Metro Map</title>
+
+	<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="jquery.subwayMap-0.5.0.js"></script>
+	<style type="text/css">
+	body {
+		font-family: Georgia;
+		font-size: 8pt;
+	}
+
+	.subway-map {
+		margin: 0;
+		height: 300px;
+		background-color: white;
+	}
+
+	.text {
+		text-decoration: none;
+		color: black;
+		font-size: 1.5em;
+	}
+
+	#legend {
+		float: left;
+		width: 250px;
+		height: 400px;
+	}
+
+	#legend div {
+		height: 25px;
+	}
+
+	#legend span
+	{
+		margin: 5px 5px 5px 0;
+	}
+	.subway-map span
+	{
+		margin: 5px 5px 5px 0;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="subway-map" data-columns="60" data-rows="60" data-cellSize="55" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="8">
+
+		<ul data-color="green" data-label="Green line">
+			<li data-coords="2,14.5">Mundka</li>
+			<li data-coords="4,14.5">Rajdhani Park</li>
+			<li data-coords="6,14.5">Nangloi Railway Station</li>
+			<li data-coords="8,14.5">Nangloi</li>
+			<li data-coords="10,14.5">Surajmal Stadium</li>
+			<li data-coords="12,14.5">Udyog Nagar</li>
+			<li data-coords="14,14.5">Peeragarhi</li>
+			<li data-coords="16,14.5">Paschim Vihar West</li>
+			<li data-coords="18,14.5">Paschim Vihar East</li>
+			<li data-coords="20,14.5">Madipur</li>
+			<li data-coords="22,14.5">Shivaji Park</li>
+			<li data-coords="24,14.5">Punjabi Bagh</li>
+			<li data-labelPos="SE" data-coords="26,14.5">Ashok Park Main</li>
+			<li data-coords="27,14" data-dir="E"></li>
+		</ul>
+
+		<ul data-color="green" data-label="Green line 2">
+			<li data-coords="26,14.5"></li>
+			<li data-labelPos="E" data-coords="25,16">Satguru Ram Singh Marg</li>
+			<li data-coords="24,17.5"></li>
+		</ul>
+
+		<ul data-color="red" data-label="Red line">
+			<li data-labelPos="E" data-coords="19,2">Rithala</li>
+			<li data-labelPos="E" data-coords="20,3.5">Rohini West</li>
+			<li data-labelPos="E" data-coords="21,5">Rohini East</li>
+			<li data-labelPos="E" data-coords="22,6.5">Pitampura</li>
+			<li data-labelPos="E" data-coords="23,8">Kohat Enclave</li>
+			<li data-labelPos="E" data-coords="24,9.5">Netaji Subhash Place</li>
+			<li data-labelPos="E" data-coords="25,11">Keshav Puram</li>
+			<li data-labelPos="E" data-coords="26,12.5">Kanhaiya Nagar</li>
+			<li data-labelPos="NE" data-coords="27,14">Inderlok</li>
+			<li data-coords="29,14">Shashtri Nagar</li>
+			<li data-coords="31,14">Pratap Nagar</li>
+			<li data-coords="33,14">Pulbangash</li>
+			<li data-coords="35,14">Tis Hazari</li>
+			<li data-labelPos="NE" data-coords="37,14">Kashmere Gate</li>
+			<li data-coords="43,14">Shastri Park</li>
+			<li data-coords="45,14">Seelampur</li>
+			<li data-coords="47,14">Welcome</li>
+			<li data-coords="49,14">Shahdra</li>
+			<li data-coords="51,14">Mansarover Park</li>
+			<li data-coords="53,14">Jhilmil</li>
+			<li data-coords="55,14">Dilshad Garden</li>
+		</ul>
+
+		<ul data-color="yellow" data-label="Yellow line">
+			<li data-labelPos="E" data-coords="32,0.25">Jahangirpuri</li>
+			<li data-labelPos="E" data-coords="33,2">Adarsh Nagar</li>
+			<li data-labelPos="E" data-coords="34,3.5">Azadpur</li>
+			<li data-labelPos="E" data-coords="35,5">Model Town</li>
+			<li data-labelPos="E" data-coords="36,6.5">G.T.B. Nagar</li>
+			<li data-labelPos="E" data-coords="37,8">Vishwavidyalaya</li>
+			<li data-labelPos="E" data-coords="37,10">Vidhan Sabha</li>
+			<li data-labelPos="E" data-coords="37,12">Civil Lines</li>
+			<li data-coords="37,14"></li>
+			<li data-labelPos="E" data-coords="37,16">Chandni Chawk</li>
+			<li data-labelPos="E" data-coords="37,18">Chawri Bazar</li>
+			<li data-labelPos="E" data-coords="37,20">New Delhi</li>
+			<li data-labelPos="NE" data-coords="37,22">Rajiv Chowk</li>
+			<li data-labelPos="W" data-coords="37,24">Patel Chawk</li>
+			<li data-labelPos="W" data-coords="37,26">Central Secretariat</li>
+			<li data-labelPos="W" data-coords="37,28">Udyog Bhawan</li>
+			<li data-labelPos="W" data-coords="37,30">Race Course</li>
+			<li data-labelPos="W" data-coords="37,32">Jor Bhagh</li>
+			<li data-labelPos="W" data-coords="37,34">INA</li>
+			<li data-labelPos="W" data-coords="37,36">AIIMS</li>
+			<li data-labelPos="W" data-coords="37,38">Green Park</li>
+			<li data-labelPos="W" data-coords="37,40">Hauz Khas</li>
+			<li data-labelPos="W" data-coords="37,42">Malviya Nagar</li>
+			<li data-labelPos="W" data-coords="37,44">Saket</li>
+			<li data-labelPos="W" data-coords="37,46">Qutab Minar</li>
+			<li data-labelPos="W" data-coords="36,47.5">Chattarpur</li>
+			<li data-labelPos="W" data-coords="35,49">Sultanpur</li>
+			<li data-labelPos="W" data-coords="34,50.5">Ghitorni</li>
+			<li data-labelPos="W" data-coords="33,52">Arjangarh</li>
+			<li data-coords="32,53" data-dir="S">Guru Dronacharya</li>
+			<li data-labelPos="N" data-coords="29,53">Sikanderpur</li>
+			<li data-labelPos="N" data-coords="27,53">M G Road</li>
+			<li data-labelPos="N" data-coords="25,53">IFFCO Chowk</li>
+			<li data-coords="24,54" data-dir="W">Huda City Centre</li>
+		</ul>
+
+		<ul data-color="blue" data-label="Blue line">
+			<li data-labelPos="W" data-coords="16,45">Dwarka Sector 21</li>
+			<li data-labelPos="W" data-coords="15,43.5">Dwarka Sector 8</li>
+			<li data-labelPos="W" data-coords="14,42">Dwarka Sector 9</li>
+			<li data-labelPos="W" data-coords="13,40.5">Dwarka Sector 10</li>
+			<li data-labelPos="W" data-coords="12,39">Dwarka Sector 11</li>
+			<li data-labelPos="W" data-coords="11,37.5">Dwarka Sector 12</li>
+			<li data-labelPos="W" data-coords="10,36">Dwarka Sector 13</li>
+			<li data-labelPos="W" data-coords="9,34.5">Dwarka Sector 14</li>
+			<li data-labelPos="W" data-coords="8,33">Dwarka</li>
+			<li data-labelPos="W" data-coords="9,31.5">Dwarka Mor</li>
+			<li data-labelPos="N" data-coords="10,30">Nawada</li>
+			<li data-coords="12,30">Uttam Nagar West</li>
+			<li data-coords="14,30">Uttam Nagar East</li>
+			<li data-labelPos="W" data-coords="15,28.5">Janakpuri West</li>
+			<li data-labelPos="W" data-coords="16,27">Janakpuri East</li>
+			<li data-labelPos="W" data-coords="17,25.5">Tilak Nagar</li>
+			<li data-labelPos="W" data-coords="18,24">Subhash Nagar</li>
+			<li data-labelPos="W" data-coords="19,22.5">Tagore Garden</li>
+			<li data-labelPos="W" data-coords="20,21">Rajouri Garden</li>
+			<li data-labelPos="W" data-coords="21,19.5">Ramesh Nagar</li>
+			<li data-labelPos="W" data-coords="22,18">Moti Nagar</li>
+			<li data-labelPos="E" data-coords="24,17.5">Kirti Nagar</li>
+			<li data-labelPos="W" data-coords="25,19">Shadipur</li>
+			<li data-coords="26,20.5">Patel Nagar</li>
+			<li data-coords="28,20.5">Rajendra Place</li>
+			<li data-coords="30.5,20.5">Karol Bagh</li>
+			<li data-coords="33,20.5">Jhandewalan</li>
+			<li data-labelPos="S" data-coords="35,20.5">Ramakrishna Ashram Marg</li>
+			<li data-coords="37,22"></li>
+			<li data-coords="39,23.5">Barakhamba Road</li>
+			<li data-coords="41,25">Mandi House</li>
+			<li data-coords="43,25">Pragati Madian</li>
+			<li data-coords="45,25">Indraprastha</li>
+			<li data-coords="47,25">Yamuna Bank</li>
+			<li data-labelPos="E" data-coords="49,26.5">Akshardham</li>
+			<li data-labelPos="W" data-coords="50,28">Mayur Vihar I</li>
+			<li data-labelPos="W" data-coords="51,29.5">Mayur Vihar Extn</li>
+			<li data-labelPos="W" data-coords="52,31">New Ashok Nagar</li>
+			<li data-labelPos="W" data-coords="53,32.5">Noida Sector 15</li>
+			<li data-labelPos="W" data-coords="54,34">Noida Sector 16</li>
+			<li data-labelPos="W" data-coords="55,35.5">Noida Sector 18</li>
+			<li data-labelPos="W" data-coords="56,37">Botanical Garden</li>
+			<li data-labelPos="W" data-coords="57,38.5">Golf Course</li>
+			<li data-coords="59,38.5">Noida City Center</li>
+		</ul>
+
+		<ul data-color="blue" data-label="Blue line 2">
+			<li data-coords="47,25"></li>
+			<li data-labelPos="E" data-coords="49,23.5">Laxmi Nagar</li>
+			<li data-labelPos="E" data-coords="50,22">Niram Vihar</li>
+			<li data-labelPos="E" data-coords="51,20.5">Preet Vihar</li>
+			<li data-labelPos="N" data-coords="52,19">Karkarduma</li>
+			<li data-coords="54,19">Anand Vihar ISBT</li>
+			<li data-coords="56,19">Kaushambi</li>
+			<li data-coords="58,19">Vaishali</li>
+		</ul>
+
+		<ul data-color="orange" data-label="Orange line">
+			<li data-coords="16,45"></li>
+			<li data-labelPos="W" data-coords="18,42">IGI Airport</li>
+			<li data-labelPos="SE" data-coords="21,39">Delhi Aero City</li>
+			<li data-labelPos="W" data-coords="25,34.5">Dhaula Kuan</li>
+			<li data-labelPos="W" data-coords="33,25">Shivaji Stadium</li>
+			<li data-coords="37,20"></li>
+		</ul>
+
+		<ul data-color="purple" data-label="Purple line">
+			<li data-coords="37,26"></li>
+			<li data-labelPos="E" data-coords="39,28.5">Khan Market</li>
+			<li data-labelPos="E" data-coords="39,30.5">JLN Stadium</li>
+			<li data-labelPos="E" data-coords="40,32">Jangpura</li>
+			<li data-labelPos="E" data-coords="41,33.5">Lajpat Nagar</li>
+			<li data-labelPos="E" data-coords="42,35">Moolchand</li>
+			<li data-labelPos="E" data-coords="43,36.5">Kailash Colony</li>
+			<li data-labelPos="E" data-coords="44,38">Nehru Place</li>
+			<li data-labelPos="E" data-coords="45,39.5">Kalkaji Mandir</li>
+			<li data-labelPos="E" data-coords="46,41">Goivnd Puri</li>
+			<li data-labelPos="E" data-coords="47,42.5">Okhla</li>
+			<li data-labelPos="E" data-coords="48,44">Jasola - Apollo</li>
+			<li data-labelPos="E" data-coords="49,45.5">Sarita Vihar</li>
+			<li data-labelPos="E" data-coords="50,47">Mohan Estate</li>
+			<li data-labelPos="E" data-coords="51,48.5">Tughlakabad</li>
+			<li data-coords="52,50">Badarpur</li>
+		</ul>
+
+	</div>
+	<!-- <div id="legend"></div> -->
+
+	<script type="text/javascript">
+		$(".subway-map").subwayMap({ debug: true });
+	</script>
+</body>
+</html>
